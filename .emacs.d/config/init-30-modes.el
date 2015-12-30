@@ -196,8 +196,11 @@
 		#'(lambda ()
 		    (slime-setup
 		     '(slime-fancy
+		       slime-media
 		       slime-repl
-		       slime-fuzzy))))
+		       slime-asdf
+		       slime-fuzzy
+		       slime-tramp))))
 	       (setq slime-net-coding-system 'utf-8-unix)
 
 	       ;; Slime and Auto-Complete
