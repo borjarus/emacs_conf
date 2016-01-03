@@ -36,6 +36,9 @@
 	       (add-hook 'flycheck-mode-hook 'flycheck-haskell-setup)
 	           ))
 
+(use-package rainbow-delimiters
+  :ensure t)
+
 ;;; Lisp
 (dolist (lisp-candidate '("sbcl" "clisp"))
   (when (executable-find lisp-candidate)

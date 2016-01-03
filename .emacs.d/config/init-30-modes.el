@@ -4,9 +4,6 @@
 
 ;; Prepare various major modes
 
-(use-package haskell-mode
-  :ensure t
-  :mode "\\.hs\\'")
 
 (use-package haskell-mode
 	     :ensure t
@@ -122,7 +119,7 @@
 		    ("\\.edn\\'" . clojure-mode))
 	     :init
 	     (add-hook 'clojure-mode-hook #'yas-minor-mode)
-	     (add-hook 'clojure-mode-hook #'linum-mode)
+	     ;;(add-hook 'clojure-mode-hook #'linum-mode)
 	     (add-hook 'clojure-mode-hook #'subword-mode)
 	     (add-hook 'clojure-mode-hook #'smartparens-mode)
 	     (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
